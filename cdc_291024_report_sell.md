@@ -28,3 +28,29 @@
 
  - `scrip-cdc-kiyosaki-online-new.sql` 
    - (En este script hay una sentencia que se debe ejecutar solo en la BD HF)
+
+
+
+
+
+```sql
+UPDATE public.fund_lang SET description='ÚLTIMA OPORTUNIDAD DE APRENDER DIRECTAMENTE DE ROBERT KIYOSAKI CÓMO GENERAR INGRESOS PASIVOS Y ASEGURAR TU LIBERTAD FINANCIERA DE POR VIDA' WHERE fund_id=658 AND lang_id=1;
+
+UPDATE public.fund_lang SET description='ÚLTIMA OPORTUNIDAD DE APRENDER DIRECTAMENTE DE ROBERT KIYOSAKI CÓMO GENERAR INGRESOS PASIVOS Y ASEGURAR TU LIBERTAD FINANCIERA DE POR VIDA' WHERE fund_id=658 AND lang_id=2;
+
+INSERT INTO public.application_parameter (application_id, "name", value, description)
+
+VALUES(627, 'CHECK_CAPTCHA', 'false', 'controla la visibilidad del captcha');
+
+INSERT INTO public.application_parameter (application_id, "name", value, description)
+
+VALUES(628, 'CHECK_CAPTCHA', 'false', 'controla la visibilidad del captcha');
+
+INSERT INTO public.system_property (id, "name", value, description) VALUES(30, 'url_core', 'https://coredev.harvestful.org/CoreServicesHF/rest/api/request', 'URL CORE HF');
+
+--EJECUTAR EN LA BD HF
+
+INSERT INTO public."method" (id, "name", description, implementor_class, method_type_id, module_id, created_at)
+
+VALUES(279, 'findUserWithPasswordMethodImpl', '', 'com.us.weavx.core.services.impl.FindUserWithPasswordMethodImpl', 2, 3, '2024-09-10 01:13:06.176');
+```
