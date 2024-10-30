@@ -1,3 +1,4 @@
+
 # CDC HF: 
 
 > *REPORT SELL, CREATE CUSTOMER AND MIGRATION SQL*
@@ -6,9 +7,9 @@
 ## PASO 1: Desplegar las siguientes ramas
 
  - **CoreServicesHF**
- - `merge_user_hf_to_ky_and_reportSeller_and_CreateCustomer`
+   - `merge_user_hf_to_ky_and_reportSeller_and_CreateCustomer`
  - **scr-admin**
- - `feat_reportAgent`
+   - `feat_reportAgent`
 ## PASO 2: Ejecutar los siguientes script
  - `operatorSellerUpdated.sql`
  - `MigrationOperatorEmailAndSeller.sql`
