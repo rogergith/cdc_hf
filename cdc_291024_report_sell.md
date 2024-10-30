@@ -19,10 +19,9 @@
 
 - **CoreServicesKY**
   - `merge_ky_online_produccion`
-- **Evento KY Online Context** 
-  - `/kiyosaki-miami-online`
+- **Evento KY Online Context** *`/kiyosaki-miami-online`*
   - `kiyosaki_online`
-- **Admin KY Miami México**
+- **Admin KY Miami México** *`/kiyosaki-miami`*
   - `feat/scanQR_uncheck_role_miami_mexico`
 
 ## PASO 2: Ejecutar los siguientes script
